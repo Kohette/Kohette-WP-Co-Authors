@@ -13,12 +13,14 @@ Domain Path: /languages
 /**
 * Load kohette framework toolkit
 */
-require_once('kohette-framework/kohette-framework.php');
+namespace kohette_coauthors {
+  require_once('kohette-framework/kohette-framework.php');
+}
 
 /**
 * create a kohette framework object
 */
-$kohette = new kohette_framework();
+$kohette = new kohette_coauthors\kohette_framework();
 
 /**
 * Configuration of the framework
