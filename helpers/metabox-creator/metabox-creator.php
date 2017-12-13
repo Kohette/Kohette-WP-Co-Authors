@@ -7,14 +7,11 @@ Module Required:
 Module Version: 1.0.0
 Module Priority: Normal
 */
+namespace ktt_helpers.classes {
 
-
-
-if (!class_exists('KTT_new_metabox'))  {
-
-
+if (!class_exists('KTT_metabox_helper'))  {
 // add section to admin pages
-class KTT_new_metabox {
+class KTT_metabox_helper {
 
     private $metabox_id;
     private $metabox_name;
@@ -139,5 +136,6 @@ class KTT_new_metabox {
     }
 
 
+}
 }
 }

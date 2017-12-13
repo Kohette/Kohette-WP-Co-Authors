@@ -1,5 +1,6 @@
 <?php
-
+use ktt_helpers.functions;
+use ktt_helpers.classes;
 /**
 * Este script permite añadir soporte para multiples authores
 */
@@ -17,7 +18,7 @@ $args['metabox_vars'] 				= 	array(
 $args['metabox_callback']			= 	'KTT_post_coauthors_meta_box';
 $args['metabox_context']			= 	'normal';
 $args['metabox_priority']			= 	'high';
-$metabox = new KTT_new_metabox($args);
+$metabox = new KTT_metabox_helper($args);
 
 
 
@@ -29,8 +30,8 @@ function KTT_post_coauthors_meta_box($post) {
     /**
   	* Invocamos la libreria selectd que nos ayuda a crear multiselects
   	*/
-  	wp_enqueue_style('style-select2', KTT_path_to_url(KOHETTE_FW_RESOURCES . '/select2/select2.css'));
-    wp_enqueue_script( 'select2', KTT_path_to_url(KOHETTE_FW_RESOURCES . '/select2/select2.js') );
+  	//wp_enqueue_style('style-select2', KTT_path_to_url(KOHETTE_FW_RESOURCES . '/select2/select2.css'));
+    //wp_enqueue_script( 'select2', KTT_path_to_url(KOHETTE_FW_RESOURCES . '/select2/select2.js') );
 
     /**
     * Obtenemos el array de authores
