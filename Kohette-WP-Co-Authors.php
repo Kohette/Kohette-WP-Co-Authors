@@ -35,10 +35,10 @@ $kohette->add_to_config(array(
 
     // Los archivos necesarios del plugin
     'plugins' => array(
-        'metabox' => array('source' => dirname(__FILE__) . "/includes/post-co-authors-metabox.php",
-        'functions' => array('source' => dirname(__FILE__) . "/includes/post-co-authors-functions.php",
-        'table' => array('source' => dirname(__FILE__) . "/includes/post-co-authors-columns.php",
-        'queryargs' => array('source' => dirname(__FILE__) . "/includes/post-co-authors-custom-query-args-coauthors.php",
+        'metabox' => array('source' => dirname(__FILE__) . "/includes/post-co-authors-metabox.php"),
+        'functions' => array('source' => dirname(__FILE__) . "/includes/post-co-authors-functions.php"),
+        'table' => array('source' => dirname(__FILE__) . "/includes/post-co-authors-columns.php"),
+        'queryargs' => array('source' => dirname(__FILE__) . "/includes/post-co-authors-custom-query-args-coauthors.php"),
     ),
 
 ));
